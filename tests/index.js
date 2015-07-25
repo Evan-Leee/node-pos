@@ -1,11 +1,12 @@
 var printReceipt = require('../lib/model');
-var Fixture = require('./fixtures');
+var fixture = require('./fixtures');
+
 
 describe('pos', function() {
   var allItems, inputs, dateDigitToString;
 
   beforeEach(function() {
-    allItems = Fixture.loadAllItems();
+    allItems = fixture.loadAllItems();
     inputs = [
       'ITEM000001',
       'ITEM000001',
