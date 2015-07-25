@@ -1,0 +1,15 @@
+{
+  "name": "node-pos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./lib/model/index.js",
+    "test": "jasmine tests/"
+  },
+  "author": "evan",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^2.3.1"
+  }
+}
