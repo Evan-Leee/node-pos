@@ -1,18 +1,22 @@
-var item = require('../lib/model/item');
+var Item = require('../lib/model/item');
 var Promotion = require ('../lib/model/promotion');
 
-exports.loadAllItems = function() {
+function Fixture() {
+
+};
+
+Fixture.loadAllItems = function() {
   return [
-    new item.Item('ITEM000000', '可口可乐', '瓶', 3.00),
-    new item.Item('ITEM000001', '雪碧', '瓶', 3.00),
-    new item.Item('ITEM000002', '苹果', '斤', 5.50),
-    new item.Item('ITEM000003', '荔枝', '斤', 15.00),
-    new item.Item('ITEM000004', '电池', '个', 2.00),
-    new item.Item('ITEM000005', '方便面', '袋', 4.50)
+    new Item('ITEM000000', '可口可乐', '瓶', 3.00),
+    new Item('ITEM000001', '雪碧', '瓶', 3.00),
+    new Item('ITEM000002', '苹果', '斤', 5.50),
+    new Item('ITEM000003', '荔枝', '斤', 15.00),
+    new Item('ITEM000004', '电池', '个', 2.00),
+    new Item('ITEM000005', '方便面', '袋', 4.50)
   ];
 };
 
-exports.loadPromotions = function() {
+Fixture.loadPromotions = function() {
   return [
     new Promotion('BUY_TWO_GET_ONE_FREE', [
       'ITEM000000',
@@ -22,5 +26,4 @@ exports.loadPromotions = function() {
   ];
 };
 
-
-
+module.exports = Fixture;
