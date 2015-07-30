@@ -1,4 +1,4 @@
-var printReceipt = require('../lib/model');
+var printReceipt = require('../lib/model/main');
 var fixture = require('./fixtures');
 
 

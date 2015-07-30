@@ -4,8 +4,8 @@
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "start": "node ./lib/model/index.js",
-    "test": "jasmine tests/"
+    "start": "node index.js",
+    "test": "jasmine spec/"
   },
   "author": "evan",
   "license": "ISC",
